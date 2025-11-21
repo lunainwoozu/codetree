@@ -3,13 +3,13 @@ let arr = fs.readFileSync(0).toString().trim().split(" ");
 
 let newArr = []
 
-arr.forEach((n) => {
-    let m = Number(n)
-    if (m !== 0){
-        newArr.push(m)
+for(let a of arr) {
+    let b = Number(a)
+    if (b !== 0){
+        newArr.push(b)
     } else {
-        return;
+        break;
     }
-})
+}
 
 console.log(newArr.reverse().join(" "));
