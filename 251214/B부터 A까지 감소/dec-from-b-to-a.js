@@ -5,7 +5,7 @@ let a = Number(input[0]);
 let b = Number(input[1]);
 let result = '';
 
-for (let i = 0; (b - a) > i; i++){
+for (let i = 0; i < (b - a + 1); i++){
     result += (b - i + ' ')
 }
 
