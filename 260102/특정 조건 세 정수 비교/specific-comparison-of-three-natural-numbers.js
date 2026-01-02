@@ -8,7 +8,7 @@ if (b - a >= 0 && c - a >= 0){
     resultA = 1;
 }
 
-if (a == b == c){
+if (a - b == 0 && a - c == 0){
     resultB = 1;
 }
 
