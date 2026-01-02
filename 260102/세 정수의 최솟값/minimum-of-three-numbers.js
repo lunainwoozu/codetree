@@ -1,10 +1,10 @@
 const fs = require('fs');
 const [a, b, c] = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
-if (a < b && a < c){
+if (a <= b && a <= c){
     console.log(a);
-} else if (b < c && b < a){
+} else if (b <= c && b <= a){
     console.log(b);
-} else {
+} else if (c <= b && c <= a) {
     console.log(c);
 }
