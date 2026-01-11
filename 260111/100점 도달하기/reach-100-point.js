@@ -10,9 +10,9 @@ while (i <= 100){
     } else if (i >= 80) {
         result += 'B ';
     } else if (i >= 70) {
-        result += 'B ';
+        result += 'C ';
     } else if (i >= 60) {
-        result += 'B ';
+        result += 'D ';
     } else {
         result += 'F ';
     }
