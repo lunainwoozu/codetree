@@ -1,7 +1,7 @@
 a, b = map(int, input().split())
-prod = a
+prod = 1
 
-for _ in range(b - 1):
+for _ in range(b):
     if b <= 0:
         break
     prod = prod * a
