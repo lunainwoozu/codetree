@@ -3,8 +3,8 @@ const [a, b] = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
 let prod = a;
 
-if (b === 0) {
-    console.log(prod);
-} else {
+if (b > 0) {
     console.log(a ** b);
+} else {
+    console.log(prod);
 }
