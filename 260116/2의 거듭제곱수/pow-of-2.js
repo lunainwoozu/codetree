@@ -1,11 +1,13 @@
 const fs = require('fs');
-const n = Number(fs.readFileSync(0));
+let n = Number(fs.readFileSync(0));
 
-for (let i = 1; i <= 10; i++) {
-    if (2 ** i === n) {
-        console.log(i);
-        break;
-    } else {
-        continue;
-    }
+let i = 1;
+let cnt = 0;
+
+while (n > 1) {
+    n = Math.floor(n / 2);
+    i++;
+    cnt++;
 }
+
+console.log(cnt);
