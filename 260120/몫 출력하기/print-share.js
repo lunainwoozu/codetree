@@ -9,7 +9,7 @@ while (true) {
         console.log(Math.floor(n / 2));
     }
 
-    if (i === 3) break;
-
     i++;
+
+    if (i === 4) break;
 }
