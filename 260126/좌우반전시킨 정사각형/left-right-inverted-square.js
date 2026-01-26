@@ -1,16 +1,10 @@
 const fs = require("fs");
 const n = Number(fs.readFileSync(0));
 
-let start = n;
-
-for (let i = 0; i < n; i++) {
-    num = start;
-    cnt = 0;
+for (let i = 1; i <= n; i++) {
     str = "";
-    for (let j = 0; j < n; j++) {
-        str += num - j - cnt + " ";
-        cnt += i;
+    for (let j = n; j > 0; j--) {
+        str += i*j + " ";
     }
     console.log(str);
-    start += n;
 }
